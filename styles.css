@@ -654,7 +654,8 @@ blockquote {
   background: linear-gradient(145deg, #f8edf0, #f1e0e7);
 }
 
-.preview-raci {
+.preview-raci,
+.preview-report {
   display: flex;
   align-items: center;
   justify-content: center;
