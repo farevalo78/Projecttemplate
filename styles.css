@@ -608,6 +608,11 @@ blockquote {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.featured-product {
+  border-color: #c8dbf0;
+  box-shadow: 0 7px 20px rgba(23, 101, 189, 0.08);
+}
+
 .product-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 32px rgba(23, 46, 74, 0.1);
@@ -1135,6 +1140,13 @@ blockquote {
   margin-top: 26px;
   color: #7f8c9c;
   font-size: 11px;
+  text-align: center;
+}
+
+.payment-note {
+  margin-top: 8px;
+  color: #8b97a5;
+  font-size: 10px;
   text-align: center;
 }
 
