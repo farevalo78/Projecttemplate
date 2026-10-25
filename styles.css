@@ -655,7 +655,8 @@ blockquote {
 }
 
 .preview-raci,
-.preview-report {
+.preview-report,
+.preview-bundle {
   display: flex;
   align-items: center;
   justify-content: center;
