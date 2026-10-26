@@ -1420,6 +1420,117 @@ blockquote {
   background: #f4f6f9;
 }
 
+.contact-section {
+  background: #f7f9fc;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+  gap: 80px;
+}
+
+.contact-copy h2 {
+  margin-top: 12px;
+  color: var(--navy);
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.12;
+}
+
+.contact-copy h2 span {
+  color: var(--blue);
+}
+
+.contact-copy > p {
+  max-width: 350px;
+  margin-top: 15px;
+  color: #78879a;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.contact-form {
+  padding: 25px;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(23, 46, 74, 0.05);
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.form-fields label {
+  display: grid;
+  gap: 7px;
+  color: #41556d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.form-fields input,
+.form-fields textarea {
+  width: 100%;
+  border: 1px solid #dfe6ee;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  color: var(--ink);
+  font: 400 12px var(--font-body);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.form-fields input {
+  min-height: 43px;
+  padding: 0 12px;
+}
+
+.form-fields textarea {
+  min-height: 125px;
+  padding: 11px 12px;
+  resize: vertical;
+}
+
+.form-fields input::placeholder,
+.form-fields textarea::placeholder {
+  color: #a2adba;
+}
+
+.form-fields input:focus,
+.form-fields textarea:focus {
+  border-color: #78a8db;
+  box-shadow: 0 0 0 3px rgba(23, 101, 189, 0.1);
+}
+
+.form-fields .message-field {
+  grid-column: 1 / -1;
+}
+
+.contact-form > .button {
+  margin-top: 17px;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-note {
+  margin-top: 12px;
+  color: #8995a4;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -5000px;
+}
+
 .footer-main {
   display: flex;
   min-height: 102px;
@@ -1432,20 +1543,9 @@ blockquote {
   background: #e5edf7;
 }
 
-.footer-main > p,
-.footer-contact {
+.footer-main > p {
   color: #7c8999;
   font-size: 10px;
-}
-
-.footer-contact {
-  color: #4f6781;
-  font-weight: 600;
-}
-
-.footer-contact span {
-  margin-left: 5px;
-  color: var(--blue);
 }
 
 .footer-bottom {
@@ -1695,6 +1795,19 @@ blockquote {
     gap: 32px;
   }
 
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+
+  .contact-copy h2 {
+    font-size: 34px;
+  }
+
+  .contact-form {
+    padding: 18px;
+  }
+
   .how-copy > p {
     max-width: 430px;
   }
@@ -1763,10 +1876,6 @@ blockquote {
   .footer-main > p {
     margin-left: 45px;
     margin-top: -8px;
-  }
-
-  .footer-contact {
-    margin-left: 45px;
   }
 
   .footer-bottom {
