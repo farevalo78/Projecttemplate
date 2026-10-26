@@ -321,6 +321,8 @@
         <form class="contact-form" action="https://formsubmit.co/farevalo78@hotmail.com" method="POST">
           <input type="hidden" name="_subject" value="New message from ProManage Templates" />
           <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://farevalo78.github.io/Projecttemplate/?contact=sent#contact" />
           <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="form-fields">
             <label>
@@ -337,7 +339,9 @@
             </label>
           </div>
           <button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button>
-          <p class="form-note">Messages are sent through FormSubmit. You'll need to confirm the recipient email after the first message.</p>
+          <p class="form-status" id="contact-status" role="status" aria-live="polite" hidden>
+            Thanks! Your message has been sent. We'll be in touch soon.
+          </p>
         </form>
       </div>
     </section>

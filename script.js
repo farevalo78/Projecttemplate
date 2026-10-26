@@ -3,6 +3,7 @@ const productCards = document.querySelectorAll(".product-card");
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 const year = document.querySelector("#current-year");
+const contactStatus = document.querySelector("#contact-status");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -34,3 +35,8 @@ mainNav.querySelectorAll("a").forEach((link) => {
 });
 
 year.textContent = String(new Date().getFullYear());
+
+if (new URLSearchParams(window.location.search).get("contact") === "sent") {
+  contactStatus.hidden = false;
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.hash}`);
+}
